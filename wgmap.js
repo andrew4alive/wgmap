@@ -13,7 +13,7 @@
              wmap = new google.maps.Map(ele, option);
             var my ;
           if(ub==true){
-           var my = umarkf(wmap);
+           var my = umarkf();
           }
              self.umark = my;
             return wmap;       
@@ -32,7 +32,7 @@
 
       };
       
-      function umarkf(wmap){
+      function umarkf(){
         
         var my;
       if(self.umoption !== null){

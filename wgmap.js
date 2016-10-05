@@ -2,6 +2,7 @@
     function wgmap (apikey){
       var self=this;
       var wmap;
+      var service;
       self.umoption=null;
       self.umark=null;
       window.onload=function(){
@@ -15,11 +16,13 @@
           if(ub==true){
            var my = umarkf();
           }
+            
+            service = new google.maps.places.PlacesService(wmap);
              self.umark = my;
             return wmap;       
         };
         self.radarS =function(option,su,er ){
-            var service = new google.maps.places.PlacesService(wmap);//change location
+           
             service.radarSearch(option,function(r,s){
                  if(s!==google.maps.places.PlacesServiceStatus.OK){// sheck status
                      er();

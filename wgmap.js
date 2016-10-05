@@ -25,7 +25,7 @@
            
             service.radarSearch(option,function(r,s){
                  if(s!==google.maps.places.PlacesServiceStatus.OK){// sheck status
-                     er();
+                     er(s);
                      return;
                      }
                   
@@ -37,7 +37,7 @@
             var splace=[];
             service.nearbySearch(option,function(r,s,p){
               if(s!==google.maps.places.PlacesServiceStatus.OK){// sheck status
-                     er();
+                     er(s);
                      return;
                      }
                 

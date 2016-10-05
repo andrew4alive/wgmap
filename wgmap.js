@@ -18,15 +18,15 @@
              self.umark = my;
             return map;       
         };
-        self.radarS =function(option,s,e ){
+        self.radarS =function(option,su,er ){
             var service = new google.maps.places.PlacesService(map);//change location
             service.radarSearch(option,function(r,s){
                  if(s!==google.maps.places.PlacesServiceStatus.OK){// sheck status
-                     e();
+                     er();
                      return;
                      }
-                  console.log(s,typeof(s));
-                      s();
+                  
+                      su(r,s);
                 
             });
         }

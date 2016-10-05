@@ -1,6 +1,7 @@
 //gmap lib 
     function wgmap (apikey){
       var self=this;
+      var service = new google.maps.places.PlacesService(map);
       self.umoption=null;
       self.umark=null;
       window.onload=function(){
@@ -17,8 +18,18 @@
              self.umark = my;
             return map;       
         };
-        
-      //  self.umark=function(){ return umarkf(); };//create your mark
+        self.radarS =function(option,success,error ){
+            service.radarSearch(option,function(r,s){
+                 if(s!==google.maps.places.PlacesServiceStatus.OK){// sheck status
+                     error();
+                     return;
+                     }
+                
+                      succcess();
+                
+            });
+        }
+
       };
       
       function umarkf(map){

@@ -26,7 +26,7 @@
                      return;
                      }
                   
-                      su(r,s);
+                      su(r);
                 
             });
         }

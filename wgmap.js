@@ -32,6 +32,29 @@
                       su(r);
             });
         };
+          
+        self.nearbySAll=function(option,su,er){
+            var splace=[];
+            service.nearbySearch(option,function(r,s,p){
+              if(s!==google.maps.places.PlacesServiceStatus.OK){// sheck status
+                     er();
+                     return;
+                     }
+                
+               for(var i=0;i<r.length;i++)
+                 splace.push(r[i]);
+           
+               if(p.hasNextPage){//inde]x page
+                    p.nextPage();
+                    }
+                else{
+                      su(splace);
+                    }
+                    
+            
+            });
+        
+        };
 
       };
       

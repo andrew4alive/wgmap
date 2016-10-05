@@ -32,20 +32,20 @@
 
       };
       
-      function umarkf(wmap){
+      function umarkf(map){
         
         var my;
       if(self.umoption !== null){
              my = new google.maps.Marker(self.umoption);
              }else{
              my = new google.maps.Marker({
-              position: wmap.getCenter(),
+              position: map.getCenter(),
               icon: {
                   path: google.maps.SymbolPath.CIRCLE,
                   scale: 5,
                  strokeColor: 'blue'},
                draggable: false,
-               map: wmap});
+               map: map});
             }
           return my;
       }

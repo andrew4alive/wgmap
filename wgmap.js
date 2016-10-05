@@ -26,7 +26,7 @@
                      return;
                      }
                 
-                      succcess();
+                      success();
                 
             });
         }

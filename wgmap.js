@@ -19,7 +19,7 @@
             return map;       
         };
         self.radarS =function(option,su,er ){
-            var service = new google.maps.places.PlacesService(map);//change location
+            var service = new google.maps.places.PlacesService(self.map);//change location
             service.radarSearch(option,function(r,s){
                  if(s!==google.maps.places.PlacesServiceStatus.OK){// sheck status
                      er();

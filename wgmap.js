@@ -25,7 +25,7 @@
                      e();
                      return;
                      }
-                
+                  console.log(s,typeof(s));
                       s();
                 
             });

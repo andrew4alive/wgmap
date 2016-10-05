@@ -1,7 +1,7 @@
 //gmap lib 
     function wgmap (apikey){
       var self=this;
-      var service = new google.maps.places.PlacesService(map);
+      
       self.umoption=null;
       self.umark=null;
       window.onload=function(){
@@ -19,6 +19,7 @@
             return map;       
         };
         self.radarS =function(option,success,error ){
+            var service = new google.maps.places.PlacesService(map);
             service.radarSearch(option,function(r,s){
                  if(s!==google.maps.places.PlacesServiceStatus.OK){// sheck status
                      error();

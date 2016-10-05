@@ -1,7 +1,7 @@
 //gmap lib 
     function wgmap (apikey){
       var self=this;
-      
+      var wmap;
       self.umoption=null;
       self.umark=null;
       window.onload=function(){
@@ -10,16 +10,16 @@
         document.body.appendChild(mapele(apikey));
        
         self.map = function(ele,option,ub){//create google map
-            var map = new google.maps.Map(ele, option);
+             wmap = new google.maps.Map(ele, option);
             var my ;
           if(ub==true){
            var my = umarkf(map);
           }
              self.umark = my;
-            return map;       
+            return wmap;       
         };
         self.radarS =function(option,su,er ){
-            var service = new google.maps.places.PlacesService(self.map);//change location
+            var service = new google.maps.places.PlacesService(wmap);//change location
             service.radarSearch(option,function(r,s){
                  if(s!==google.maps.places.PlacesServiceStatus.OK){// sheck status
                      er();

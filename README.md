@@ -14,13 +14,14 @@ google map library version 3.25
    var gmap = new wgmap(**apikey**);
    **apikey** need to obtain from google map, and place
    
-   ####this is also include google map api cdn in the end of body
+####this is also include google map api cdn in the end of body
    
 ### how to use:
   
   after init, you can create map using  code below:
   
-     var map = gmap(Dom element[Dom], google map option[object]( https://developers.google.com/maps/documentation/javascript/reference#MapOptions)  
+     var map = gmap(Dom element[Dom], 
+     google map option[object] (https://developers.google.com/maps/documentation/javascript/reference#MapOptions)  
      , render yorself location[boolean])
         
         #####example code:
@@ -33,7 +34,7 @@ google map library version 3.25
            true);
            map.setOptions({draggable: false});
            
-          code above will render google map and your location in map center. if you want other option , add option to 
-            gmap.umoption. umoption refer to [this](https://developers.google.com/maps/documentation/javascript/reference#MarkerOptions).
+ code above will render google map and your location in map center. if you want other option , add option to gmap.umoption. 
+ umoption refer to  [this](https://developers.google.com/maps/documentation/javascript/reference#MarkerOptions).
             
-            you also can change it later using gmap.mark object;
+ you also can change it later using gmap.mark object;

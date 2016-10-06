@@ -37,4 +37,4 @@ google map library version 3.25
  code above will render google map and your location in map center. if you want other option , add option to gmap.umoption. 
  umoption refer to  [this](https://developers.google.com/maps/documentation/javascript/reference#MarkerOptions).
             
- you also can change it property later using gmap.mark object;
+ you also can change it location/property later using gmap.mark object;

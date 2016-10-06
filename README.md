@@ -32,9 +32,9 @@ google map library version 3.25
            true);
            map.setOptions({draggable: false});
            
-*[google map option](https://developers.google.com/maps/documentation/javascript/reference#MapOptions) )link *           
+*[google map option](https://developers.google.com/maps/documentation/javascript/reference#MapOptions) link *           
            
  code above will render google map and your location in map center. if you want other option , add option to gmap.umoption. 
  umoption refer to  [this](https://developers.google.com/maps/documentation/javascript/reference#MarkerOptions).
             
- you also can change it later using gmap.mark object;
+ you also can change it property later using gmap.mark object;

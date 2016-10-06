@@ -20,9 +20,7 @@ google map library version 3.25
   
   after init, you can create map using  code below:
   
-     var map = gmap(Dom element[Dom], 
-     google map option[object] (https://developers.google.com/maps/documentation/javascript/reference#MapOptions)  
-     , render yorself location[boolean])
+     var map = gmap(Dom element[Dom], google map option[object]  , render yorself location[boolean])
         
         #####example code:
         
@@ -33,6 +31,8 @@ google map library version 3.25
                 },
            true);
            map.setOptions({draggable: false});
+           
+*[google map option]((https://developers.google.com/maps/documentation/javascript/reference#MapOptions) )link *           
            
  code above will render google map and your location in map center. if you want other option , add option to gmap.umoption. 
  umoption refer to  [this](https://developers.google.com/maps/documentation/javascript/reference#MarkerOptions).

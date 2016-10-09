@@ -3,6 +3,7 @@
       var self=this;
       var wmap;
       var service;
+      self.service=null;  
       self.umoption=null;
       self.umark=null;
       window.onload=function(){
@@ -18,6 +19,7 @@
           }
             
             service = new google.maps.places.PlacesService(wmap);
+            self.service = service;
              self.umark = my;
             return wmap;       
         };
